@@ -3,6 +3,9 @@ WORKDIR /webapi_app
 EXPOSE 80
 EXPOSE 443
 
+RUN adduser -u 1234 --disabled-password --gecos "" webapiuser && chown -R webapiuser /webapi_app
+USER webapiuser
+
 FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine AS build
 WORKDIR /src
 COPY ["webapi-docker.csproj", "./"]
@@ -21,4 +24,4 @@ RUN dotnet publish "webapi-docker.csproj" -c Release -o /webapi_app/publish \
 FROM base AS final
 WORKDIR /webapi_app
 COPY --from=publish /webapi_app/publish .
-ENTRYPOINT [ "dotnet", "webapi-docker.dll" ]
+ENTRYPOINT ["./webapi-docker"]
