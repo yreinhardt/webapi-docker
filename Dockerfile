@@ -3,7 +3,7 @@ WORKDIR /webapi_app
 EXPOSE 80
 EXPOSE 443
 
-RUN adduser -u 1234 --disabled-password --gecos "" webapiuser && chown -R webapiuser /webapi_app
+RUN adduser -u 1234 --disabled-password --gecos "" webapiuser && chmod -R +x /webapi_app
 USER webapiuser
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine AS build
