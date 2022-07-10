@@ -1,4 +1,20 @@
-var builder = WebApplication.CreateBuilder(args);
+global using FastEndpoints;
+global using FluentValidation;
+using FastEndpoints.Swagger; //add this
+
+var builder = WebApplication.CreateBuilder();
+builder.Services.AddFastEndpoints();
+builder.Services.AddSwaggerDoc(); //add this
+
+var app = builder.Build();
+app.UseAuthorization();
+app.UseFastEndpoints();
+app.UseOpenApi(); //add this
+app.UseSwaggerUi3(c => c.ConfigureDefaults()); //add this
+app.Run();
+
+
+/*var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -23,3 +39,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+*/

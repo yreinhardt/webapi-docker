@@ -45,6 +45,26 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FastEndpoints": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "FastEndpoints.Generator": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "FastEndpoints.Security": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "FastEndpoints.Swagger": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "FastEndpoints.Validation": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -68,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22204.3\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
