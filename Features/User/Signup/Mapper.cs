@@ -3,7 +3,7 @@ using BCryptNet = BCrypt.Net.BCrypt;
 
 namespace Signup
 {
-    public class UserMapper : Mapper<Request, Response, User>
+    public class SignupMapper : Mapper<Request, Response, User>
     {
         
         // mapping from request to entity user 

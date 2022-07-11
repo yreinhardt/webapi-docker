@@ -1,6 +1,6 @@
 ﻿namespace Signup
 {
-    public class Endpoint : Endpoint<Request, Response, UserMapper>
+    public class Endpoint : Endpoint<Request, Response, SignupMapper>
     {
         public override void Configure()
         {
