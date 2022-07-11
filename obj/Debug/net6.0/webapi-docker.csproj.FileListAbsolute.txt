@@ -49,3 +49,4 @@ G:\webapi-docker\webapi-docker\bin\Debug\net6.0\NSwag.Generation.dll
 G:\webapi-docker\webapi-docker\bin\Debug\net6.0\NSwag.Generation.AspNetCore.dll
 G:\webapi-docker\webapi-docker\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 G:\webapi-docker\webapi-docker\bin\Debug\net6.0\YamlDotNet.dll
+G:\webapi-docker\webapi-docker\bin\Debug\net6.0\BCrypt.Net-Next.dll

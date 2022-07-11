@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "resqSxVPSrZn5oM8ZPDSkz9OrD1AULHtIujAxBobmohdsSwS6E6HpMAbc0jMgCWT33QQPS1OlMRecmKjeBwZDg==",
+  "dgSpecHash": "9Qiy8xPMrHzMNNo7yaevkXRP/lf7sTwAJyVsM9fI5TG+XvVnPTNtZvpIxCGBOViFVR16cWJqFvJtPrvlaD72Zg==",
   "success": true,
   "projectFilePath": "G:\\webapi-docker\\webapi-docker\\webapi-docker.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yanni\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\yanni\\.nuget\\packages\\fastendpoints\\4.3.0\\fastendpoints.4.3.0.nupkg.sha512",
     "C:\\Users\\yanni\\.nuget\\packages\\fastendpoints.generator\\4.3.0\\fastendpoints.generator.4.3.0.nupkg.sha512",
     "C:\\Users\\yanni\\.nuget\\packages\\fastendpoints.security\\4.3.0\\fastendpoints.security.4.3.0.nupkg.sha512",

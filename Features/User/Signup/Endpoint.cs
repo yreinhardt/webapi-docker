@@ -1,6 +1,6 @@
 ﻿namespace Signup
 {
-    public class Endpoint : Endpoint<Request, Response, Mapper>
+    public class Endpoint : Endpoint<Request, Response, UserMapper>
     {
         public override void Configure()
         {
@@ -11,17 +11,22 @@
 
         public override async Task HandleAsync(Request r, CancellationToken c)
         {
+            User entity = Map.ToEntity(r);
+            Response = Map.FromEntity(entity);
 
-            await SendAsync(new Response()
+            await SendAsync(Response);
+
+            /*await SendAsync(new Response()
             {
                 Message = "Successfully created user!",
                 FirstName = r.FirstName,
                 LastName = r.LastName,
                 Email = r.Email,
                 UserName = r.UserName,
-                Password = r.Password
+                //PasswordHash = passwordHash,
+                //PasswordSalt = passwordSalt
 
-            });
+            });*/
         }
     }
 }

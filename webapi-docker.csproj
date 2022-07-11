@@ -8,12 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="FastEndpoints" Version="4.3.0" />
     <PackageReference Include="FastEndpoints.Generator" Version="4.3.0" />
     <PackageReference Include="FastEndpoints.Security" Version="4.3.0" />
     <PackageReference Include="FastEndpoints.Swagger" Version="4.3.0" />
     <PackageReference Include="FastEndpoints.Validation" Version="3.11.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\User\Login\" />
   </ItemGroup>
 
 </Project>
