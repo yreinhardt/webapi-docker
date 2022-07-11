@@ -23,7 +23,16 @@ docker run -it -p 2000:80 -e ASPNETCORE_ENVIRONMENT=Development webdocker-api:us
 http://localhost:2000/swagger
 ```
 
-## Detailed description
+## Detailed description api
+
+- Based on .NET 6 minimal webapi
+- Following RPR Desing Pattern (REPR = Request-Endpoint-Response)
+- Using light-weight REST Api framwork FastEndpoints for .NET6 that implements REPR Desing Pattern (https://fast-endpoints.com/index.html)
+- Simplifies MVC Pattern to overcome bloated Controllers and not used Views
+- Every endpoint class has one single handler with an optional request and response type (https://deviq.com/design-patterns/repr-design-pattern)
+
+
+## Detailed description docker
 
 - `webdocker-api:basic` consists of `mcr.microsoft.com/dotnet/aspnet:6.0` and `mcr.microsoft.com/dotnet/sdk:6.0` and using as default a debian base. 
 - Debian distribution is quite big and shipping unnecessary stuff. 
