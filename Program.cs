@@ -1,15 +1,15 @@
 global using FastEndpoints;
 global using FluentValidation;
-global using FastEndpoints.Security; 
+//global using FastEndpoints.Security; 
 using FastEndpoints.Swagger;
 
 var builder = WebApplication.CreateBuilder();
-builder.Services.AddAuthenticationJWTBearer("JwtSigningKey");
+//builder.Services.AddAuthenticationJWTBearer("JwtSigningKey");
 builder.Services.AddFastEndpoints();
 builder.Services.AddSwaggerDoc();
 
 var app = builder.Build();
-app.UseAuthentication();
+//app.UseAuthentication();
 app.UseAuthorization();
 app.UseFastEndpoints();
 app.UseOpenApi(); 
